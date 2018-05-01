@@ -11,7 +11,7 @@ body {
 
 .flex {
   display: flex;
-  top: 50px;
+  top: 70px;
   position: relative;
 }
 
@@ -30,6 +30,7 @@ div.headerrow {
   background-color: black;
   height: 69px;
   border-bottom: 1px solid seashell;
+  z-index: 1;
 }
 
 div.headerrow img {
@@ -100,6 +101,12 @@ ul li a {
 
 /* Locations */
 
+#locationssquare {
+  display: flex;
+  justify-content: space-around;
+
+}
+
 #locations {
   background: url("../resources/images/img-locations-background.jpg");
   justify-content: space-around;
@@ -109,17 +116,19 @@ ul li a {
   margin: 0 auto;
 }
 
-#locations h2 {
+#locationsh2 {
   width: 100%;
 }
 
-
 .locationssquare {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: black;
-  color: white;
   height: 350px;
   width: 300px;
   font-size: 18px;
+  margin: 0 20px;
 }
 
 .locationssquare h2 {
